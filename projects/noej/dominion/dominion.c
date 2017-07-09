@@ -732,16 +732,8 @@ int council_roomRefactored(int i, int currentPlayer, struct gameState *state, in
 }
 
 int villageRefactored(int currentPlayer, struct gameState *state, int handPos){
-      /***************
-      Jeffrey Noe edit
-      changed "drawCard(currentPlayer, state)".  Calling this function twice.  Player drawing two cards
-      ***************/
-      drawCard(currentPlayer, state);
-      drawCard(currentPlayer, state);
 
-      /***************
-      End of edit
-      ***************/
+      drawCard(currentPlayer, state);
 
       //+2 Actions
       state->numActions = state->numActions + 2;
