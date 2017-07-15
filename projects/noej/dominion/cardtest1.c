@@ -14,8 +14,8 @@ void printTestResults(int test){
             printf("Function returned unexpected value.\n");
 }
 
-// with a newly initialized game, 'numHandCards' should always return a 5
-int numHandCardsTest(){
+
+int smithyRefactoredTest(){
 
       //Default cards, as defined in playDom
       // The following three lines are from player.c to initialize the game
@@ -23,17 +23,23 @@ int numHandCardsTest(){
       struct gameState state;
       initializeGame(3,k,1,&state);
 
-      int result = numHandCards(&state);
-      if(result == 5)
-            return 1;
-      else
+      int beforeSmithy = numHandCards(&state);
+      // Test if smithyRefactored() reaches the end nominally
+      if(smithyRefactored(0, 0, &state, 0) != 0)
             return 0;
+      int afterSmithy = numHandCards(&state);
+
+      // difference should be 2 because Smithy picks up three cards, but the player still needs to discard 1 card
+      if(afterSmithy - beforeSmithy !=2)
+            return 0;
+      return 1;
+
 }
 
 int main(){
 
       printf("Testing the 'numHandCards' function...\n");
-      int testResults = numHandCardsTest();
+      int testResults = smithyRefactoredTest();
       printTestResults(testResults);
 
       return 0;
