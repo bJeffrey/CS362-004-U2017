@@ -15,7 +15,7 @@ void printTestResults(int test){
 }
 
 
-// This allows the purchase of a card up to 6 value higher instead of three
+// This allows the purchase of a card up to 6 value higher instead of three for the mine card
 int mineTest(){
 
       //Default cards, as defined in playDom
