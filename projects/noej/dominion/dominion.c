@@ -5,6 +5,10 @@
 #include <math.h>
 #include <stdlib.h>
 
+int tme(int x, int y){
+      return 0;
+}
+
 int compare(const void* a, const void* b) {
   if (*(int*)a > *(int*)b)
     return 1;
