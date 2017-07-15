@@ -38,7 +38,7 @@ int smithyRefactoredTest(){
 
 int main(){
 
-      printf("Testing the 'numHandCards' function...\n");
+      printf("Testing the 'smithyRefactoredTest' function...\n");
       int testResults = smithyRefactoredTest();
       printTestResults(testResults);
 
