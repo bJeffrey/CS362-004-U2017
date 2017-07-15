@@ -755,6 +755,7 @@ int villageRefactored(int currentPlayer, struct gameState *state, int handPos){
       return 0;
 
 }
+
 int mineRefactored(int i, int j, struct gameState *state, int choice1, int choice2, int currentPlayer, int handPos){
       j = state->hand[currentPlayer][choice1];  //store card we will trash
 
