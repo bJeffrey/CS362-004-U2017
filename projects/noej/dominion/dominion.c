@@ -708,7 +708,6 @@ int smithyRefactored(int i, int currentPlayer, struct gameState *state, int hand
 
 }
 int council_roomRefactored(int i, int currentPlayer, struct gameState *state, int handPos){
-
             //+4 Cards
             for (i = 0; i < 4; i++)
       	{

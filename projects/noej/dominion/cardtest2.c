@@ -53,7 +53,7 @@ int adventurerRefactoredTest(){
 
 int main(){
 
-      printf("Testing the 'numHandCards' function...\n");
+      printf("Testing the 'adventurerRefactored' function...\n");
       int testResults = adventurerRefactoredTest();
       printTestResults(testResults);
 
