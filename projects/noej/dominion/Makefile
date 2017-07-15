@@ -68,22 +68,22 @@ cardTest4: dominion.o playdom.c
 
 
 t1: testdom
+	testdom1 >> unittestresults.out
+	testdom2 >> unittestresults.out
+	testdom3 >> unittestresults.out
+	testdom4 >> unittestresults.out
+	cardTest1 >> unittestresults.out
 	cardTest2 >> unittestresults.out
-#	cardTest1 >> unittestresults.out
-#	testdom1 >> unittestresults.out
-#	testdom2 >> unittestresults.out
-#	testdom3 >> unittestresults.out
-#	testdom4 >> unittestresults.out
-#	cardTest3 >> unittestresults.out
-#	cardTest4 >> unittestresults.out
-#	gcov -b -c unittest1.c >> unittestresults.out
-#	gcov -b -c unittest2.c >> unittestresults.out
-#	gcov -b -c unittest3.c >> unittestresults.out
-#	gcov -b -c unittest4.c >> unittestresults.out
-#	gcov -b -c cardtest1.c >> unittestresults.out
-#	gcov -b -c cardtest2.c >> unittestresults.out
-#	gcov -b -c cardtest3.c >> unittestresults.out
-#	gcov -b -c cardtest4.c >> unittestresults.out
+	cardTest3 >> unittestresults.out
+	cardTest4 >> unittestresults.out
+	gcov -b -c unittest1.c >> unittestresults.out
+	gcov -b -c unittest2.c >> unittestresults.out
+	gcov -b -c unittest3.c >> unittestresults.out
+	gcov -b -c unittest4.c >> unittestresults.out
+	gcov -b -c cardtest1.c >> unittestresults.out
+	gcov -b -c cardtest2.c >> unittestresults.out
+	gcov -b -c cardtest3.c >> unittestresults.out
+	gcov -b -c cardtest4.c >> unittestresults.out
 
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4

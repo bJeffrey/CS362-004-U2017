@@ -14,8 +14,9 @@ void printTestResults(int test){
             printf("Function returned unexpected value.\n");
 }
 
-// with a newly initialized game, 'numHandCards' should always return a 5
-int villageTest(){
+
+// This allows the purchase of a card up to 6 value higher instead of three
+int mineTest(){
 
       //Default cards, as defined in playDom
       // The following three lines are from player.c to initialize the game
@@ -25,14 +26,8 @@ int villageTest(){
 
       int x, result;
       stateCopy = state;
-      result = cardEffect(village, 0, 0, 0, &state, 0, &x);
+      result = cardEffect(mine, 0, 2, 0, &state, 0, &x);
       if(result != 0)
-            return 0;
-
-      if(stateCopy.handCount[0] != state.handCount[0])
-            return 0;
-
-      if(stateCopy.numActions +2 != state.numActions)
             return 0;
 
       return 1;
@@ -40,8 +35,8 @@ int villageTest(){
 
 int main(){
 
-      printf("Testing the 'village' function...\n");
-      int testResults = villageTest();
+      printf("Testing the 'mine' function...\n");
+      int testResults = mineTest();
       printTestResults(testResults);
 
       return 0;

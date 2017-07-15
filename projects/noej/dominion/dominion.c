@@ -761,25 +761,27 @@ int mineRefactored(int i, int j, struct gameState *state, int choice1, int choic
 
       if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold)
 	{
+            printf("here1 %d\n", state->hand[currentPlayer][choice1]);
 	  return -1;
 	}
 
       if (choice2 > treasure_map || choice2 < curse)
 	{
+            printf("here3\n");
 	  return -1;
 	}
 
       /***************
       Jeffrey Noe edit
-      changed "if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )"
-      to "if ( (getCost(state->hand[currentPlayer][choice1]) + 4) > getCost(choice2) )"
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) )
+      changed to
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 6) > getCost(choice2) )
       ***************/
-      if ( (getCost(state->hand[currentPlayer][choice1]) + 4) > getCost(choice2) )
+      if ( (getCost(state->hand[currentPlayer][choice1]) + 6) > getCost(choice2) )
       {
-
-      /***************
-      End of edit
-      ***************/
+            /***************
+            End of edit
+            ***************/
 	  return -1;
 	}
 
@@ -787,12 +789,14 @@ int mineRefactored(int i, int j, struct gameState *state, int choice1, int choic
 
       //discard card from hand
       discardCard(handPos, currentPlayer, state, 0);
+      // discardCard(handPos, currentPlayer, state, 0);
 
       //discard trashed card
       for (i = 0; i < state->handCount[currentPlayer]; i++)
 	{
 	  if (state->hand[currentPlayer][i] == j)
 	    {
+
 	      discardCard(i, currentPlayer, state, 0);
 	      break;
 	    }
