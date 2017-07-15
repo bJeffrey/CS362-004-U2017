@@ -68,12 +68,12 @@ cardTest4: dominion.o playdom.c
 
 
 t1: testdom
-	cardTest1 >> unittestresults.out
+	cardTest2 >> unittestresults.out
+#	cardTest1 >> unittestresults.out
 #	testdom1 >> unittestresults.out
 #	testdom2 >> unittestresults.out
 #	testdom3 >> unittestresults.out
 #	testdom4 >> unittestresults.out
-#	cardTest2 >> unittestresults.out
 #	cardTest3 >> unittestresults.out
 #	cardTest4 >> unittestresults.out
 #	gcov -b -c unittest1.c >> unittestresults.out

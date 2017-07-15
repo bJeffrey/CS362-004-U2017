@@ -649,7 +649,14 @@ int getCost(int cardNumber)
 
 int adventurerRefactored(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int temphand[], int z){
 
-      while(drawntreasure<2){
+      /***************
+      Jeffrey Noe edit
+      drawntreasure<2 was changed to drawntreasure<=2
+      ***************/
+      while(drawntreasure<=2){
+      /***************
+      End of edit
+      ***************/
             if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
                   shuffle(currentPlayer, state);
             }
@@ -664,8 +671,10 @@ int adventurerRefactored(int drawntreasure, struct gameState *state, int current
                   Jeffrey Noe edit
                   "changed state->handCount[currentPlayer]--"" to "state->handCount[currentPlayer] = state->handCount[currentPlayer] - 2"
                   The result is count is one card lower than it sould be
+                  note that this change does not work with the game only initialized!  A different error must be induced.
+                      As such, drawntreasure<2 was changed to drawntreasure<=2
                   ***************/
-                  state->handCount[currentPlayer] = state->handCount[currentPlayer] - 2; //this should just remove the top card (the most recently drawn one).
+                  state->handCount[currentPlayer] = state->handCount[currentPlayer] - 1; //this should just remove the top card (the most recently drawn one).
                   /***************
                   End of edit
                   ***************/
