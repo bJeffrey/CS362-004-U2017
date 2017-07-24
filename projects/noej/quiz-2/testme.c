@@ -3,21 +3,83 @@
 #include<stdlib.h>
 #include<time.h>
 
+/********************************************
+Relevant ascii values
+[ = 91
+( = 40
+{ = 123
+  = 32
+a = 97
+x = 120
+} = 125
+) = 41
+] = 93
+********************************************/
 char inputChar()
 {
-    // TODO: rewrite this function
-    return ' ';
+      // random() is part of posix and not available on windows
+      unsigned int min = 32;
+      unsigned int max = 125;
+      unsigned int asciiValue;
+      char asciiValueToChar;
+      unsigned int randNum;
+      unsigned int range = 1 + max - min;
+      unsigned int buckets = RAND_MAX / range;
+      unsigned int limit = buckets * range;
+
+      do{
+          randNum = random();
+      //     randNum = rand();
+      }while(randNum >= limit);
+
+      asciiValue = min + (randNum / buckets);
+      printf("asciiValue: %d\n", asciiValue);
+
+      asciiValueToChar = asciiValue;
+      printf("asciiValueToChar: %c\n", asciiValueToChar);
+    return asciiValueToChar;
 }
 
 // I've verified that this function works and needs randomized.
 char *inputString()
 {
     char* str = malloc(5);
-    str[0] = 'r';
-    str[1] = 'e';
-    str[2] = 's';
-    str[3] = 'e';
-    str[4] = 't';
+    memset(str, '\0', sizeof(char) * 5);
+
+    // random() is part of posix and not available on windows
+    unsigned int min = 0;
+    unsigned int max = 10;
+    unsigned int i;
+    // char asciiValueToChar;
+    unsigned int randNum;
+    unsigned int range = 1 + max - min;
+    unsigned int buckets = RAND_MAX / range;
+    unsigned int limit = buckets * range;
+    int counter = 0;
+    char strChoices[] = "iarexspzktl";
+
+    while(counter < 5){
+
+          do{
+                randNum = random();
+                //     randNum = rand();
+          }while(randNum >= limit);
+
+          i = min + (randNum / buckets);
+      //     printf("asciiValue: %d\n", asciiValue);
+
+      //     asciiValueToChar = asciiValue;
+      //     printf("asciiValueToChar: %c\n", asciiValueToChar);
+          str[counter] = strChoices[i];
+          counter++;
+   }
+   /*
+   str[0] = 'r';
+   str[1] = 'e';
+   str[2] = 's';
+   str[3] = 'e';
+   str[4] = 't';
+   */
 
     return str;
 }
