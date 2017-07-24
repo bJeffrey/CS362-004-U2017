@@ -33,14 +33,11 @@ char inputChar()
       }while(randNum >= limit);
 
       asciiValue = min + (randNum / buckets);
-      printf("asciiValue: %d\n", asciiValue);
-
       asciiValueToChar = asciiValue;
-      printf("asciiValueToChar: %c\n", asciiValueToChar);
-    return asciiValueToChar;
+      return asciiValueToChar;
 }
 
-// I've verified that this function works and needs randomized.
+
 char *inputString()
 {
     char* str = malloc(5);
@@ -50,7 +47,6 @@ char *inputString()
     unsigned int min = 0;
     unsigned int max = 10;
     unsigned int i;
-    // char asciiValueToChar;
     unsigned int randNum;
     unsigned int range = 1 + max - min;
     unsigned int buckets = RAND_MAX / range;
@@ -66,10 +62,6 @@ char *inputString()
           }while(randNum >= limit);
 
           i = min + (randNum / buckets);
-      //     printf("asciiValue: %d\n", asciiValue);
-
-      //     asciiValueToChar = asciiValue;
-      //     printf("asciiValueToChar: %c\n", asciiValueToChar);
           str[counter] = strChoices[i];
           counter++;
    }
