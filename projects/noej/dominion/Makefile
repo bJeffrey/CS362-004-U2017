@@ -66,27 +66,41 @@ cardTest3: dominion.o playdom.c
 cardTest4: dominion.o playdom.c
 	gcc -o cardTest4 cardtest4.c -g dominion.o rngs.o $(CFLAGS)
 
+randomtestcard1: dominion.o playdom.c
+	gcc -o randomtestcard1 randomtestcard1.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestcard2: dominion.o playdom.c
+	gcc -o randomtestcard2 randomtestcard2.c -g dominion.o rngs.o $(CFLAGS)
+
+randomtestadventurer: dominion.o playdom.c
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
 
 t1: testdom
-	testdom1 >> unittestresults.out
-	testdom2 >> unittestresults.out
-	testdom3 >> unittestresults.out
-	testdom4 >> unittestresults.out
-	cardTest1 >> unittestresults.out
-	cardTest2 >> unittestresults.out
-	cardTest3 >> unittestresults.out
-	cardTest4 >> unittestresults.out
-	gcov -b -c unittest1.c >> unittestresults.out
-	gcov -b -c unittest2.c >> unittestresults.out
-	gcov -b -c unittest3.c >> unittestresults.out
-	gcov -b -c unittest4.c >> unittestresults.out
-	gcov -b -c cardtest1.c >> unittestresults.out
-	gcov -b -c cardtest2.c >> unittestresults.out
-	gcov -b -c cardtest3.c >> unittestresults.out
-	gcov -b -c cardtest4.c >> unittestresults.out
+	randomtestadventurer
+	gcov -b -c randomtestadventurer.c
+#	randomtestcard1
+#	randomtestcard2
+#	testdom1 >> unittestresults.out
+#	testdom2 >> unittestresults.out
+#	testdom3 >> unittestresults.out
+#	testdom4 >> unittestresults.out
+#	cardTest1 >> unittestresults.out
+#	cardTest2 >> unittestresults.out
+#	cardTest3 >> unittestresults.out
+#	cardTest4 >> unittestresults.out
+#	gcov -b -c unittest1.c >> unittestresults.out
+#	gcov -b -c unittest2.c >> unittestresults.out
+#	gcov -b -c unittest3.c >> unittestresults.out
+#	gcov -b -c unittest4.c >> unittestresults.out
+#	gcov -b -c cardtest1.c >> unittestresults.out
+#	gcov -b -c cardtest2.c >> unittestresults.out
+#	gcov -b -c cardtest3.c >> unittestresults.out
+#	gcov -b -c cardtest4.c >> unittestresults.out
 
+#test: testme
+#	randomtestcard1
 
-all: playdom player testDrawCard testBuyCard badTestDrawCard testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4
+all: playdom player testDrawCard testBuyCard badTestDrawCard testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestadventurer
 
 clean:
-	rm -f *.o playdom.exe testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestadventurer playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
