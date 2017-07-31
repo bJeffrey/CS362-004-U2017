@@ -9,10 +9,11 @@
 void printTestResults(int test){
       if(test == 0)
             printf("Test Failed.\n");
-      else if(test == 1)
+/*      else if(test == 1)
             printf("Test Passed.\n");
       else
             printf("Function returned unexpected value.\n");
+*/
 }
 
 int generateRandNum(unsigned int min, unsigned int max){
