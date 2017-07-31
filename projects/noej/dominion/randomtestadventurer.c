@@ -9,10 +9,11 @@
 void printTestResults(int test){
       if(test == 0)
             printf("Test Failed.\n");
-      else if(test == 1)
-            printf("Test Passed.\n");
-      else
-            printf("Function returned unexpected value.\n");
+//      else if(test == 1)
+//            printf("Test Passed.\n");
+//      else
+//            printf("Function returned unexpected value.\n");
+
 }
 
 int generateRandNum(unsigned int min, unsigned int max){
@@ -128,7 +129,7 @@ int adventurerRandomTestGenerator(){
       }
       if(countAfter != countBefore + 2 /*&& state.handCount[0] != 7*/)
             return 0;
-      return 1;
+      // return 1;
 
 }
 
