@@ -136,6 +136,7 @@ int main(){
       srand(time(NULL));
       int returnValue, i;
 
+      printf("Beginning 100 iterations allowing 100 iterations of random values as parameters and gameState changes to the\nAdventurer Refactored function and cardEffect...");
       for(i = 0; i < 100; i++){
             returnValue = adventurerRandomTestGenerator();
             printTestResults(returnValue);

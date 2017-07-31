@@ -75,12 +75,19 @@ randomtestcard2: dominion.o playdom.c
 randomtestadventurer: dominion.o playdom.c
 	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
 
+#default: everything
+
+#everything:
+#	all
+#	t1
+
 t1: testdom
+	randomtestadventurer
 	randomtestcard1
-	gcov -b -c randomtestcard1.c
-#	randomtestadventurer
-#	gcov -b -c randomtestadventurer.c
-#	randomtestcard2
+	randomtestcard2
+	gcov -b -c randomtestadventurer.c >> randomtestadventurer.out
+	gcov -b -c randomtestcard1.c >> randomtestcard1.out
+	gcov -b -c randomtestcard2.c >> randomtestcard2.out
 #	testdom1 >> unittestresults.out
 #	testdom2 >> unittestresults.out
 #	testdom3 >> unittestresults.out
@@ -102,6 +109,12 @@ t1: testdom
 #	randomtestcard1
 
 all: playdom player testDrawCard testBuyCard badTestDrawCard testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestadventurer
+	randomtestadventurer >> randomtestadventurer.out
+	randomtestcard1 >> randomtestcard1.out
+	randomtestcard2 >> randomtestcard2.out
+	gcov -b -c randomtestadventurer.c >> randomtestadventurer.out
+	gcov -b -c randomtestcard1.c >> randomtestcard1.out
+	gcov -b -c randomtestcard2.c >> randomtestcard2.out
 
 clean:
 	rm -f *.o playdom.exe testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestadventurer playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe

@@ -116,7 +116,7 @@ int smithyRandomTestGenerator(){
 
 int main(){
 
-      printf("In randomtestcard1.c\n");
+      printf("Beginning 100 iterations allowing 100 iterations of random values as parameters and gameState changes to the\nSmithy Refactored function and cardEffect...");
       int returnResult, i;
 
       for(i = 0; i < 100; i++){
