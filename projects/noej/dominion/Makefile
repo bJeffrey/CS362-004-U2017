@@ -76,9 +76,10 @@ randomtestadventurer: dominion.o playdom.c
 	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o $(CFLAGS)
 
 t1: testdom
-	randomtestadventurer
-	gcov -b -c randomtestadventurer.c
-#	randomtestcard1
+	randomtestcard1
+	gcov -b -c randomtestcard1.c
+#	randomtestadventurer
+#	gcov -b -c randomtestadventurer.c
 #	randomtestcard2
 #	testdom1 >> unittestresults.out
 #	testdom2 >> unittestresults.out
