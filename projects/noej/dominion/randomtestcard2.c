@@ -15,6 +15,7 @@ void printTestResults(int test){
       else
             printf("Function returned unexpected value.\n");
 */
+
 }
 
 int generateRandNum(unsigned int min, unsigned int max){
