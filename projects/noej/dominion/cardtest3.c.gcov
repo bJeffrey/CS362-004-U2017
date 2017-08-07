@@ -1,0 +1,96 @@
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+function printTestResults called 2 returned 100% blocks executed 50%
+        2:    8:void printTestResults(int test){
+        2:    9:      if(test == 0)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   10:            printf("Test Failed.\n");
+call    0 returned 2
+    #####:   11:      else if(test == 1)
+branch  0 never executed
+branch  1 never executed
+    #####:   12:            printf("Test Passed.\n");
+call    0 never executed
+        -:   13:      else
+    #####:   14:            printf("Function returned unexpected value.\n");
+call    0 never executed
+        2:   15:}
+        -:   16:
+        -:   17:// I should have 8 cards at the end of council room because council room picks up 4 and discards 1
+        -:   18:// I should have one more buy than I started with
+        -:   19:// Here, my player number is 1
+function council_roomRefactoredTest called 2 returned 100% blocks executed 71%
+        2:   20:int council_roomRefactoredTest(){
+        -:   21:
+        -:   22:      //Default cards, as defined in playDom
+        -:   23:      // The following three lines are from player.c to initialize the game
+        2:   24:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   25:      struct gameState state, stateCopy;
+        2:   26:      initializeGame(3,k,1,&state);
+call    0 returned 2
+        -:   27:
+        -:   28:      int x, i;
+        2:   29:      stateCopy = state;
+        -:   30:      // int result = cardEffect(council_room, 0, 0, 0, &state, 0, &x);
+        2:   31:      int result = council_roomRefactored(x, 1, &state, 0);
+call    0 returned 2
+        -:   32:
+        2:   33:      if(result != 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   34:            return 0;
+        -:   35:
+        2:   36:      if(stateCopy.handCount[1] +3 != state.handCount[1])
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   37:            return 0;
+        -:   38:
+        -:   39:
+        2:   40:      if (stateCopy.numBuys + 1 != state.numBuys)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   41:            return 0;
+        -:   42:
+        2:   43:      for (i = 0; i < state.numPlayers; i++)
+branch  0 taken 2
+branch  1 taken 0 (fallthrough)
+        -:   44:      {
+        -:   45:
+        2:   46:            if ( i != 1 )
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        -:   47:            {
+        2:   48:                  if(stateCopy.handCount[i] + 1!= state.handCount[i])
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   49:                        return 0;
+        -:   50:            }
+        -:   51:      }
+        -:   52:
+        -:   53:
+    #####:   54:      return 1;
+        -:   55:}
+        -:   56:
+function main called 2 returned 100% blocks executed 100%
+        2:   57:int main(){
+        -:   58:
+        2:   59:      printf("Testing the 'council_roomRefactored' function...\n");
+call    0 returned 2
+        2:   60:      int testResults = council_roomRefactoredTest();
+call    0 returned 2
+        2:   61:      printTestResults(testResults);
+call    0 returned 2
+        -:   62:
+        2:   63:      return 0;
+        -:   64:}

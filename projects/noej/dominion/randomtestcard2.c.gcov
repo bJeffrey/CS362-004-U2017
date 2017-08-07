@@ -1,0 +1,275 @@
+        -:    0:Source:randomtestcard2.c
+        -:    0:Graph:randomtestcard2.gcno
+        -:    0:Data:randomtestcard2.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <limits.h>
+        -:    8:
+function printTestResults called 400 returned 100% blocks executed 100%
+      400:    9:void printTestResults(int test){
+      400:   10:      if(test == 0)
+branch  0 taken 400 (fallthrough)
+branch  1 taken 0
+      400:   11:            printf("Test Failed.\n");
+call    0 returned 400
+        -:   12:/*
+        -:   13:      else if(test == 1)
+        -:   14:            printf("Test Passed.\n");
+        -:   15:      else
+        -:   16:            printf("Function returned unexpected value.\n");
+        -:   17:*/
+        -:   18:
+      400:   19:}
+        -:   20:
+function generateRandNum called 1608 returned 100% blocks executed 100%
+     1608:   21:int generateRandNum(unsigned int min, unsigned int max){
+        -:   22:      // random() is part of posix and not available on windows
+        -:   23:
+        -:   24:      unsigned int switchMinMax;
+     1608:   25:      if(max <= min){
+branch  0 taken 800 (fallthrough)
+branch  1 taken 808
+      800:   26:            switchMinMax = max;
+      800:   27:            max = min;
+      800:   28:            min = switchMinMax;
+        -:   29:      }
+        -:   30:
+        -:   31:      unsigned int randomNumber;
+        -:   32:
+     1608:   33:      unsigned int range = 1 + max - min;
+     1608:   34:      unsigned int buckets = RAND_MAX / range;
+     1608:   35:      unsigned int limit = buckets * range;
+        -:   36:
+        -:   37:      do{
+     1652:   38:          randomNumber = random();
+call    0 returned 1652
+        -:   39:      //     randNum = rand();
+     1652:   40:}while(randomNumber >= limit);
+branch  0 taken 44
+branch  1 taken 1608 (fallthrough)
+        -:   41:
+     1608:   42:      randomNumber = min + (randomNumber / buckets);
+        -:   43:
+     1608:   44:      return (int) randomNumber;
+        -:   45:}
+        -:   46:
+function council_roomRandomTestGenerator called 404 returned 100% blocks executed 23%
+      404:   47:int council_roomRandomTestGenerator(int numPlayers, int handSize, int num1, int num2){
+        -:   48:
+        -:   49:      //Default cards, as defined in playDom
+        -:   50:      // The following three lines are from player.c to initialize the game
+      404:   51:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   52:      struct gameState state, stateCopy;
+      404:   53:      initializeGame(3,k,1,&state);
+call    0 returned 404
+        -:   54:
+        -:   55:      int x, i;
+        -:   56:
+      404:   57:      state.numActions = num2;
+      404:   58:      state.numBuys = num1;
+      404:   59:      state.deckCount[0] = handSize;
+        -:   60:
+      404:   61:      stateCopy = state;
+      404:   62:      int result = cardEffect(council_room, num1, num2, handSize, &state, 0, &x);
+call    0 returned 404
+        -:   63:
+      404:   64:      if(result != 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 404
+    #####:   65:            return 0;
+        -:   66:
+      404:   67:      if(stateCopy.handCount[1] +3 != state.handCount[1])
+branch  0 taken 404 (fallthrough)
+branch  1 taken 0
+      404:   68:            return 0;
+        -:   69:
+        -:   70:
+    #####:   71:      if (stateCopy.numBuys + 1 != state.numBuys)
+branch  0 never executed
+branch  1 never executed
+    #####:   72:            return 0;
+        -:   73:
+    #####:   74:      for (i = 0; i < state.numPlayers; i++)
+branch  0 never executed
+branch  1 never executed
+        -:   75:      {
+        -:   76:
+    #####:   77:            if ( i != 1 )
+branch  0 never executed
+branch  1 never executed
+        -:   78:            {
+    #####:   79:                  if(stateCopy.handCount[i] + 1!= state.handCount[i])
+branch  0 never executed
+branch  1 never executed
+    #####:   80:                        return 0;
+        -:   81:            }
+        -:   82:      }
+        -:   83:
+    #####:   84:      result = council_roomRefactored(x, 1, &state, 0);
+call    0 never executed
+        -:   85:
+        -:   86:
+    #####:   87:      if(result != 0)
+branch  0 never executed
+branch  1 never executed
+    #####:   88:            return 0;
+        -:   89:
+    #####:   90:      if(stateCopy.handCount[1] +3 != state.handCount[1])
+branch  0 never executed
+branch  1 never executed
+    #####:   91:            return 0;
+        -:   92:
+        -:   93:
+    #####:   94:      if (stateCopy.numBuys + 1 != state.numBuys)
+branch  0 never executed
+branch  1 never executed
+    #####:   95:            return 0;
+        -:   96:
+    #####:   97:      for (i = 0; i < state.numPlayers; i++)
+branch  0 never executed
+branch  1 never executed
+        -:   98:      {
+        -:   99:
+    #####:  100:            if ( i != 1 )
+branch  0 never executed
+branch  1 never executed
+        -:  101:            {
+    #####:  102:                  if(stateCopy.handCount[i] + 1!= state.handCount[i])
+branch  0 never executed
+branch  1 never executed
+    #####:  103:                        return 0;
+        -:  104:            }
+        -:  105:      }
+        -:  106:
+        -:  107:
+    #####:  108:      return 1;
+        -:  109:
+        -:  110:}
+        -:  111:
+        -:  112:
+function main called 4 returned 100% blocks executed 68%
+        4:  113:int main(){
+        -:  114:
+        -:  115:      int i, numPlayers, handSize, num3, num4, num5, num6, printResults;
+        4:  116:      unsigned int randNum1 = random();
+call    0 returned 4
+        4:  117:      unsigned int randNum2 = random();
+call    0 returned 4
+        4:  118:      unsigned int randNum3 = random();
+call    0 returned 4
+        4:  119:      unsigned int randNum4 = random();
+call    0 returned 4
+        4:  120:      unsigned int randNum5 = random();
+call    0 returned 4
+        4:  121:      unsigned int randNum6 = random();
+call    0 returned 4
+        4:  122:      unsigned int randNum7 = random();
+call    0 returned 4
+        4:  123:      unsigned int randNum8 = random();
+call    0 returned 4
+        4:  124:      unsigned int randNum9 = random();
+call    0 returned 4
+        4:  125:      unsigned int randNum10 = random();
+call    0 returned 4
+        4:  126:      unsigned int randNum11 = random();
+call    0 returned 4
+        4:  127:      unsigned int randNum12 = random();
+call    0 returned 4
+        -:  128:
+        -:  129:
+        8:  130:      while(randNum1 > INT_MAX || randNum2 > INT_MAX || randNum3 > INT_MAX || randNum4 > INT_MAX || randNum5 > INT_MAX){
+branch  0 taken 0
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0
+branch  5 taken 4 (fallthrough)
+branch  6 taken 0
+branch  7 taken 4 (fallthrough)
+branch  8 taken 0
+branch  9 taken 4 (fallthrough)
+    #####:  131:            randNum1 = random();
+call    0 never executed
+    #####:  132:            randNum2 = random();
+call    0 never executed
+    #####:  133:            randNum3 = random();
+call    0 never executed
+    #####:  134:            randNum4 = random();
+call    0 never executed
+    #####:  135:            randNum5 = random();
+call    0 never executed
+    #####:  136:            randNum6 = random();
+call    0 never executed
+    #####:  137:            randNum7 = random();
+call    0 never executed
+    #####:  138:            randNum8 = random();
+call    0 never executed
+    #####:  139:            randNum9 = random();
+call    0 never executed
+    #####:  140:            randNum10 = random();
+call    0 never executed
+    #####:  141:            randNum11 = random();
+call    0 never executed
+    #####:  142:            randNum12 = random();
+call    0 never executed
+        -:  143:
+        -:  144:      }
+        4:  145:      num5 = generateRandNum(randNum9, randNum10);
+call    0 returned 4
+        4:  146:      num6 = generateRandNum(randNum11, randNum12);
+call    0 returned 4
+        -:  147:
+        4:  148:      printf("Beginning 100 iterations allowing 100 iterations of random values as parameters and gameState changes to the\nCouncil Room Refactored function and cardEffect...");
+call    0 returned 4
+      404:  149:      for(i = 0; i < 100; i++){
+branch  0 taken 400
+branch  1 taken 4 (fallthrough)
+      800:  150:            while(randNum1 > INT_MAX || randNum2 > INT_MAX || randNum3 > INT_MAX || randNum4 > INT_MAX){
+branch  0 taken 0
+branch  1 taken 400 (fallthrough)
+branch  2 taken 0
+branch  3 taken 400 (fallthrough)
+branch  4 taken 0
+branch  5 taken 400 (fallthrough)
+branch  6 taken 0
+branch  7 taken 400 (fallthrough)
+    #####:  151:                  randNum1 = random();
+call    0 never executed
+    #####:  152:                  randNum2 = random();
+call    0 never executed
+    #####:  153:                  randNum3 = random();
+call    0 never executed
+    #####:  154:                  randNum4 = random();
+call    0 never executed
+        -:  155:            }
+        -:  156:
+      400:  157:            numPlayers = generateRandNum(2, 4);
+call    0 returned 400
+      400:  158:            handSize = generateRandNum(1, 500);
+call    0 returned 400
+      400:  159:            num3 = generateRandNum(randNum1, randNum2);
+call    0 returned 400
+      400:  160:            num4 = generateRandNum(randNum4, randNum3);
+call    0 returned 400
+        -:  161:
+      400:  162:            if(i == 0)
+branch  0 taken 4 (fallthrough)
+branch  1 taken 396
+        4:  163:                  printResults = council_roomRandomTestGenerator(numPlayers, handSize, i, num4);
+call    0 returned 4
+        -:  164:
+      400:  165:            printResults = council_roomRandomTestGenerator(numPlayers, handSize, num3, num4);
+call    0 returned 400
+      400:  166:            printTestResults(printResults);
+call    0 returned 400
+        -:  167:      }
+        -:  168:
+        -:  169:
+        4:  170:      return 0;
+        -:  171:}

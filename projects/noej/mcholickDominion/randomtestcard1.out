@@ -1,0 +1,809 @@
+---Start Random Village Card Testing---
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:87, Hand: 76, Discard: 10
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:91, Hand: 98, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:100, Hand: 65, Discard: 67
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:77, Hand: 57, Discard: 26
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:49, Hand: 42, Discard: 40
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:49, Hand: 32, Discard: 7
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:83, Hand: 63, Discard: 58
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:53, Hand: 45, Discard: 19
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:57, Hand: 40, Discard: 92
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:17, Hand: 40, Discard: 9
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:87, Hand: 26, Discard: 79
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:85, Hand: 71, Discard: 16
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:69, Hand: 64, Discard: 83
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:21, Hand: 55, Discard: 18
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:83, Hand: 77, Discard: 72
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:97, Hand: 57, Discard: 5
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:88, Hand: 35, Discard: 84
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:68, Hand: 75, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:83, Hand: 11, Discard: 27
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:52, Hand: 54, Discard: 91
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:37, Hand: 79, Discard: 47
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:90, Hand: 75, Discard: 28
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:99, Hand: 92, Discard: 71
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:15, Hand: 69, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:92, Hand: 58, Discard: 92
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:53, Hand: 56, Discard: 65
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:58, Hand: 95, Discard: 78
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:96, Hand: 28, Discard: 31
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:88, Hand: 24, Discard: 99
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:12, Hand: 67, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:16, Hand: 65, Discard: 7
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:88, Hand: 75, Discard: 75
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:74, Hand: 67, Discard: 29
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:87, Hand: 26, Discard: 26
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:66, Hand: 16, Discard: 16
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:70, Hand: 24, Discard: 87
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:61, Hand: 31, Discard: 68
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:48, Hand: 91, Discard: 27
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:94, Hand: 11, Discard: 14
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:22, Hand: 83, Discard: 31
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:89, Hand: 12, Discard: 90
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:58, Hand: 15, Discard: 50
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:11, Hand: 52, Discard: 91
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:80, Hand: 56, Discard: 22
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:41, Hand: 12, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:29, Hand: 46, Discard: 78
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:94, Hand: 67, Discard: 58
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:50, Hand: 23, Discard: 96
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:55, Hand: 35, Discard: 0
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:17, Hand: 92, Discard: 28
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:85, Hand: 60, Discard: 99
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:97, Hand: 67, Discard: 9
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:66, Hand: 28, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:77, Hand: 10, Discard: 15
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:35, Hand: 57, Discard: 18
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:22, Hand: 14, Discard: 85
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:46, Hand: 46, Discard: 85
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:38, Hand: 54, Discard: 50
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:54, Hand: 21, Discard: 14
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:26, Hand: 63, Discard: 27
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:61, Hand: 73, Discard: 17
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:75, Hand: 80, Discard: 62
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:77, Hand: 23, Discard: 32
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:27, Hand: 93, Discard: 79
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:94, Hand: 11, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:45, Hand: 56, Discard: 82
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:62, Hand: 12, Discard: 22
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:50, Hand: 25, Discard: 94
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:52, Hand: 57, Discard: 67
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:54, Hand: 37, Discard: 45
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:41, Hand: 83, Discard: 26
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:94, Hand: 41, Discard: 7
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:14, Hand: 77, Discard: 50
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:86, Hand: 50, Discard: 45
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:27, Hand: 52, Discard: 91
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:41, Hand: 30, Discard: 45
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:56, Hand: 20, Discard: 74
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:23, Hand: 90, Discard: 92
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:67, Hand: 27, Discard: 78
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:52, Hand: 40, Discard: 35
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:49, Hand: 78, Discard: 29
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:11, Hand: 53, Discard: 44
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:67, Hand: 94, Discard: 19
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:15, Hand: 30, Discard: 87
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:77, Hand: 54, Discard: 71
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:42, Hand: 11, Discard: 84
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:51, Hand: 16, Discard: 6
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:71, Hand: 98, Discard: 10
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:79, Hand: 38, Discard: 53
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:53, Hand: 18, Discard: 60
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:37, Hand: 26, Discard: 2
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:40, Hand: 32, Discard: 86
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:18, Hand: 11, Discard: 66
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:95, Hand: 80, Discard: 63
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:41, Hand: 47, Discard: 23
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:71, Hand: 39, Discard: 35
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:92, Hand: 24, Discard: 54
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:14, Hand: 72, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:75, Hand: 70, Discard: 77
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:49, Hand: 57, Discard: 72
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:91, Hand: 22, Discard: 66
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:91, Hand: 11, Discard: 64
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:88, Hand: 100, Discard: 38
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:95, Hand: 36, Discard: 15
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:57, Hand: 72, Discard: 61
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:93, Hand: 35, Discard: 97
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:43, Hand: 33, Discard: 51
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:74, Hand: 14, Discard: 28
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:29, Hand: 17, Discard: 98
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:38, Hand: 69, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:34, Hand: 92, Discard: 33
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:82, Hand: 62, Discard: 8
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:21, Hand: 23, Discard: 5
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:92, Hand: 68, Discard: 77
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:57, Hand: 93, Discard: 21
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:97, Hand: 94, Discard: 82
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:54, Hand: 85, Discard: 50
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:23, Hand: 18, Discard: 68
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:81, Hand: 17, Discard: 38
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:84, Hand: 43, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:32, Hand: 67, Discard: 66
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:94, Hand: 23, Discard: 35
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:61, Hand: 48, Discard: 95
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:43, Hand: 16, Discard: 31
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:30, Hand: 44, Discard: 5
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:60, Hand: 46, Discard: 56
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:53, Hand: 47, Discard: 82
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:100, Hand: 38, Discard: 87
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:34, Hand: 37, Discard: 66
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:12, Hand: 94, Discard: 51
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:79, Hand: 33, Discard: 65
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:96, Hand: 60, Discard: 13
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:64, Hand: 48, Discard: 4
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:50, Hand: 69, Discard: 5
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:21, Hand: 61, Discard: 63
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:38, Hand: 29, Discard: 80
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:32, Hand: 95, Discard: 93
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:22, Hand: 92, Discard: 99
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:80, Hand: 35, Discard: 61
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:82, Hand: 84, Discard: 66
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:96, Hand: 47, Discard: 40
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:41, Hand: 91, Discard: 1
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:14, Hand: 87, Discard: 36
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:67, Hand: 21, Discard: 2
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:80, Hand: 19, Discard: 43
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:13, Hand: 69, Discard: 40
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:92, Hand: 18, Discard: 51
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:14, Hand: 39, Discard: 60
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:54, Hand: 51, Discard: 56
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:77, Hand: 16, Discard: 92
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:90, Hand: 55, Discard: 77
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:37, Hand: 86, Discard: 95
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:11, Hand: 27, Discard: 49
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:40, Hand: 84, Discard: 95
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:15, Hand: 51, Discard: 7
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:84, Hand: 46, Discard: 58
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:62, Hand: 34, Discard: 37
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:41, Hand: 51, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:88, Hand: 88, Discard: 98
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:75, Hand: 83, Discard: 23
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:14, Hand: 44, Discard: 15
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:41, Hand: 51, Discard: 79
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:92, Hand: 84, Discard: 42
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:95, Hand: 55, Discard: 61
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:48, Hand: 21, Discard: 51
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:12, Hand: 11, Discard: 94
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:17, Hand: 59, Discard: 62
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:46, Hand: 86, Discard: 85
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:56, Hand: 60, Discard: 31
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:74, Hand: 41, Discard: 92
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:30, Hand: 91, Discard: 5
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:79, Hand: 31, Discard: 63
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:37, Hand: 33, Discard: 90
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:36, Hand: 89, Discard: 29
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:85, Hand: 24, Discard: 99
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:97, Hand: 37, Discard: 35
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:15, Hand: 69, Discard: 82
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:42, Hand: 42, Discard: 53
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:23, Hand: 81, Discard: 18
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:24, Hand: 62, Discard: 90
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:100, Hand: 46, Discard: 22
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:52, Hand: 22, Discard: 99
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:92, Hand: 20, Discard: 78
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:50, Hand: 69, Discard: 83
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:46, Hand: 39, Discard: 90
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:25, Hand: 21, Discard: 49
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:22, Hand: 66, Discard: 52
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:17, Hand: 65, Discard: 72
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:100, Hand: 33, Discard: 13
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:67, Hand: 72, Discard: 86
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:67, Hand: 15, Discard: 98
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:21, Hand: 76, Discard: 76
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:31, Hand: 34, Discard: 93
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:96, Hand: 13, Discard: 17
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 2, Deck:52, Hand: 53, Discard: 87
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:54, Hand: 16, Discard: 3
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:78, Hand: 92, Discard: 78
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:48, Hand: 89, Discard: 42
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 4, Deck:75, Hand: 70, Discard: 74
+
+Failed:ActionCount difference of 1
+ActionCount should be: 3 ActionCount is: 2 
+Player Count: 3, Deck:98, Hand: 23, Discard: 90
+
+---End Random Village card Testing---
+Random Village Test Passed: 0 , Failed: 200 
+File 'dominion.c'
+No executable lines
+No branches
+No calls
+Removing 'dominion.c.gcov'
+

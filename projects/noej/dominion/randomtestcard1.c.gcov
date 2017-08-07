@@ -1,0 +1,201 @@
+        -:    0:Source:randomtestcard1.c
+        -:    0:Graph:randomtestcard1.gcno
+        -:    0:Data:randomtestcard1.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <limits.h>
+        -:    8:
+function printTestResults called 400 returned 100% blocks executed 100%
+      400:    9:void printTestResults(int test){
+      400:   10:      if(test == 0)
+branch  0 taken 400 (fallthrough)
+branch  1 taken 0
+      400:   11:            printf("Test Failed.\n");
+call    0 returned 400
+        -:   12:/*      else if(test == 1)
+        -:   13:            printf("Test Passed.\n");
+        -:   14:      else
+        -:   15:            printf("Function returned unexpected value.\n");
+        -:   16:*/
+        -:   17:
+      400:   18:}
+        -:   19:
+function generateRandNum called 2400 returned 100% blocks executed 100%
+     2400:   20:int generateRandNum(unsigned int min, unsigned int max){
+        -:   21:      // random() is part of posix and not available on windows
+        -:   22:
+        -:   23:
+        -:   24:
+        -:   25:
+        -:   26:
+        -:   27:      unsigned int switchMinMax;
+     2400:   28:      if(max <= min){
+branch  0 taken 808 (fallthrough)
+branch  1 taken 1592
+      808:   29:            switchMinMax = max;
+      808:   30:            max = min;
+      808:   31:            min = switchMinMax;
+        -:   32:      }
+        -:   33:
+        -:   34:      unsigned int randomNumber;
+        -:   35:
+     2400:   36:      unsigned int range = 1 + max - min;
+     2400:   37:      unsigned int buckets = RAND_MAX / range;
+     2400:   38:      unsigned int limit = buckets * range;
+        -:   39:
+        -:   40:      do{
+     2784:   41:          randomNumber = random();
+call    0 returned 2784
+        -:   42:      //     randNum = rand();
+     2784:   43:}while(randomNumber >= limit);
+branch  0 taken 384
+branch  1 taken 2400 (fallthrough)
+        -:   44:
+     2400:   45:      randomNumber = min + (randomNumber / buckets);
+        -:   46:
+     2400:   47:      return (int) randomNumber;
+        -:   48:}
+        -:   49:
+function smithyRandomTestGenerator called 400 returned 100% blocks executed 71%
+      400:   50:int smithyRandomTestGenerator(){
+        -:   51:
+        -:   52:      //Default cards, as defined in playDom
+        -:   53:      // The following three lines are from player.c to initialize the game
+      400:   54:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   55:      struct gameState state;
+        -:   56:      int beforeSmithy;
+        -:   57:      int afterSmithy;
+        -:   58:
+        -:   59:      int numPlayers, handSize, num3, num4, num5, num6;
+      400:   60:      unsigned int randNum1 = random();
+call    0 returned 400
+      400:   61:      unsigned int randNum2 = random();
+call    0 returned 400
+      400:   62:      unsigned int randNum3 = random();
+call    0 returned 400
+      400:   63:      unsigned int randNum4 = random();
+call    0 returned 400
+      400:   64:      unsigned int randNum5 = random();
+call    0 returned 400
+      400:   65:      unsigned int randNum6 = random();
+call    0 returned 400
+      400:   66:      unsigned int randNum7 = random();
+call    0 returned 400
+      400:   67:      unsigned int randNum8 = random();
+call    0 returned 400
+      400:   68:      unsigned int randNum9 = random();
+call    0 returned 400
+      400:   69:      unsigned int randNum10 = random();
+call    0 returned 400
+      400:   70:      unsigned int randNum11 = random();
+call    0 returned 400
+      400:   71:      unsigned int randNum12 = random();
+call    0 returned 400
+        -:   72:
+        -:   73:
+      800:   74:      while(randNum1 > INT_MAX || randNum2 > INT_MAX || randNum3 > INT_MAX || randNum4 > INT_MAX || randNum5 > INT_MAX){
+branch  0 taken 0
+branch  1 taken 400 (fallthrough)
+branch  2 taken 0
+branch  3 taken 400 (fallthrough)
+branch  4 taken 0
+branch  5 taken 400 (fallthrough)
+branch  6 taken 0
+branch  7 taken 400 (fallthrough)
+branch  8 taken 0
+branch  9 taken 400 (fallthrough)
+    #####:   75:            randNum1 = random();
+call    0 never executed
+    #####:   76:            randNum2 = random();
+call    0 never executed
+    #####:   77:            randNum3 = random();
+call    0 never executed
+    #####:   78:            randNum4 = random();
+call    0 never executed
+    #####:   79:            randNum5 = random();
+call    0 never executed
+    #####:   80:            randNum6 = random();
+call    0 never executed
+    #####:   81:            randNum7 = random();
+call    0 never executed
+    #####:   82:            randNum8 = random();
+call    0 never executed
+    #####:   83:            randNum9 = random();
+call    0 never executed
+    #####:   84:            randNum10 = random();
+call    0 never executed
+    #####:   85:            randNum11 = random();
+call    0 never executed
+    #####:   86:            randNum12 = random();
+call    0 never executed
+        -:   87:
+        -:   88:      }
+        -:   89:
+      400:   90:      numPlayers = generateRandNum(2, 4);
+call    0 returned 400
+      400:   91:      handSize = generateRandNum(1, 500);
+call    0 returned 400
+      400:   92:      num3 = generateRandNum(randNum5, randNum6);
+call    0 returned 400
+      400:   93:      num4 = generateRandNum(randNum7, randNum8);
+call    0 returned 400
+      400:   94:      num5 = generateRandNum(randNum9, randNum10);
+call    0 returned 400
+      400:   95:      num6 = generateRandNum(randNum11, randNum12);
+call    0 returned 400
+      400:   96:      initializeGame(3,k,1,&state);
+call    0 returned 400
+        -:   97:
+      400:   98:      beforeSmithy = numHandCards(&state);
+call    0 returned 400
+        -:   99:      // Test if smithyRefactored() reaches the end nominally
+        -:  100:
+      400:  101:      smithyRefactored(num3, 0, &state, 0);
+call    0 returned 400
+        -:  102:
+      400:  103:      afterSmithy = numHandCards(&state);
+call    0 returned 400
+        -:  104:
+      400:  105:      state.deckCount[0] = handSize;//This happens to be the same limit as the deck size
+      400:  106:      state.discardCount[0] = num4;
+      400:  107:      smithyRefactored(num5, 0, &state, 0);
+call    0 returned 400
+      400:  108:      int x = random();
+call    0 returned 400
+      400:  109:      cardEffect(smithy, num4, num5, num6, &state, 0, &x);
+call    0 returned 400
+        -:  110:
+        -:  111:      // difference should be 2 because Smithy picks up three cards, but the player still needs to discard 1 card
+      400:  112:      if(afterSmithy - beforeSmithy !=2)
+branch  0 taken 400 (fallthrough)
+branch  1 taken 0
+      400:  113:            return 0;
+    #####:  114:      return 1;
+        -:  115:
+        -:  116:}
+        -:  117:
+        -:  118:
+function main called 4 returned 100% blocks executed 100%
+        4:  119:int main(){
+        -:  120:
+        4:  121:      printf("Beginning 100 iterations allowing 100 iterations of random values as parameters and gameState changes to the\nSmithy Refactored function and cardEffect...");
+call    0 returned 4
+        -:  122:      int returnResult, i;
+        -:  123:
+      404:  124:      for(i = 0; i < 100; i++){
+branch  0 taken 400
+branch  1 taken 4 (fallthrough)
+      400:  125:            returnResult = smithyRandomTestGenerator();
+call    0 returned 400
+      400:  126:            printTestResults(returnResult);
+call    0 returned 400
+        -:  127:
+        -:  128:      }
+        4:  129:      return 0;
+        -:  130:}

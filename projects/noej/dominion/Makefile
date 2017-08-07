@@ -88,6 +88,10 @@ t1: testdom
 	gcov -b -c randomtestadventurer.c >> randomtestadventurer.out
 	gcov -b -c randomtestcard1.c >> randomtestcard1.out
 	gcov -b -c randomtestcard2.c >> randomtestcard2.out
+#	gcov -b -c unittest1.c
+#	gcov -b -c unittest2.c
+#	gcov -b -c unittest3.c
+#	gcov -b -c unittest4.c
 #	testdom1 >> unittestresults.out
 #	testdom2 >> unittestresults.out
 #	testdom3 >> unittestresults.out
@@ -96,10 +100,6 @@ t1: testdom
 #	cardTest2 >> unittestresults.out
 #	cardTest3 >> unittestresults.out
 #	cardTest4 >> unittestresults.out
-#	gcov -b -c unittest1.c >> unittestresults.out
-#	gcov -b -c unittest2.c >> unittestresults.out
-#	gcov -b -c unittest3.c >> unittestresults.out
-#	gcov -b -c unittest4.c >> unittestresults.out
 #	gcov -b -c cardtest1.c >> unittestresults.out
 #	gcov -b -c cardtest2.c >> unittestresults.out
 #	gcov -b -c cardtest3.c >> unittestresults.out
@@ -115,6 +115,22 @@ all: playdom player testDrawCard testBuyCard badTestDrawCard testdom1 testdom2 t
 	gcov -b -c randomtestadventurer.c >> randomtestadventurer.out
 	gcov -b -c randomtestcard1.c >> randomtestcard1.out
 	gcov -b -c randomtestcard2.c >> randomtestcard2.out
+	gcov -b -c unittest1.c
+	gcov -b -c unittest2.c
+	gcov -b -c unittest3.c
+	gcov -b -c unittest4.c
+	testdom1
+	testdom2
+	testdom3
+	testdom4
+	cardTest1
+	cardTest2
+	cardTest3
+	cardTest4
+	gcov -b -c cardtest1.c
+	gcov -b -c cardtest2.c
+	gcov -b -c cardtest3.c
+	gcov -b -c cardtest4.c
 
 clean:
 	rm -f *.o playdom.exe testdom1 testdom2 testdom3 testdom4 cardTest1 cardTest2 cardTest3 cardTest4 randomtestcard1 randomtestcard2 randomtestadventurer playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe

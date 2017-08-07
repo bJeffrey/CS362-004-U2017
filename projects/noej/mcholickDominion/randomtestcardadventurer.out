@@ -1,0 +1,13 @@
+---Start Random Adventurer card Testing---
+Failed: HandCount difference of -1 
+HandCount from Adventure function is : 40, HandCount should be : 41 
+TreasureCount should be: 8 treasureCount is: 7 
+Player Count: 2, Deck:14, Hand: 39, Discard: 3
+---End Random Adventurer card Testing---
+Random Adventurer Test Passed: 199 , Failed: 1 
+File 'dominion.c'
+No executable lines
+No branches
+No calls
+Removing 'dominion.c.gcov'
+

@@ -1,0 +1,72 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+function printTestResults called 2 returned 100% blocks executed 50%
+        2:    8:void printTestResults(int test){
+        2:    9:      if(test == 0)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   10:            printf("Test Failed.\n");
+call    0 returned 2
+    #####:   11:      else if(test == 1)
+branch  0 never executed
+branch  1 never executed
+    #####:   12:            printf("Test Passed.\n");
+call    0 never executed
+        -:   13:      else
+    #####:   14:            printf("Function returned unexpected value.\n");
+call    0 never executed
+        2:   15:}
+        -:   16:
+        -:   17:
+function smithyRefactoredTest called 2 returned 100% blocks executed 82%
+        2:   18:int smithyRefactoredTest(){
+        -:   19:
+        -:   20:      //Default cards, as defined in playDom
+        -:   21:      // The following three lines are from player.c to initialize the game
+        2:   22:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   23:      struct gameState state;
+        2:   24:      initializeGame(3,k,1,&state);
+call    0 returned 2
+        -:   25:
+        2:   26:      int beforeSmithy = numHandCards(&state);
+call    0 returned 2
+        -:   27:      // Test if smithyRefactored() reaches the end nominally
+        2:   28:      if(smithyRefactored(0, 0, &state, 0) != 0)
+call    0 returned 2
+branch  1 taken 0 (fallthrough)
+branch  2 taken 2
+    #####:   29:            return 0;
+        2:   30:      int afterSmithy = numHandCards(&state);
+call    0 returned 2
+        -:   31:
+        -:   32:      // difference should be 2 because Smithy picks up three cards, but the player still needs to discard 1 card
+        2:   33:      if(afterSmithy - beforeSmithy !=2)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   34:            return 0;
+    #####:   35:      return 1;
+        -:   36:
+        -:   37:}
+        -:   38:
+function main called 2 returned 100% blocks executed 100%
+        2:   39:int main(){
+        -:   40:
+        2:   41:      printf("Testing the 'smithyRefactoredTest' function...\n");
+call    0 returned 2
+        2:   42:      int testResults = smithyRefactoredTest();
+call    0 returned 2
+        2:   43:      printTestResults(testResults);
+call    0 returned 2
+        -:   44:
+        2:   45:      return 0;
+        -:   46:}

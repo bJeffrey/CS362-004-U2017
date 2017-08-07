@@ -1,0 +1,221 @@
+        -:    0:Source:randomtestadventurer.c
+        -:    0:Graph:randomtestadventurer.gcno
+        -:    0:Data:randomtestadventurer.gcda
+        -:    0:Runs:4
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <limits.h>
+        -:    8:
+function printTestResults called 400 returned 100% blocks executed 100%
+      400:    9:void printTestResults(int test){
+      400:   10:      if(test == 0)
+branch  0 taken 400 (fallthrough)
+branch  1 taken 0
+      400:   11:            printf("Test Failed.\n");
+call    0 returned 400
+        -:   12://      else if(test == 1)
+        -:   13://            printf("Test Passed.\n");
+        -:   14://      else
+        -:   15://            printf("Function returned unexpected value.\n");
+        -:   16:
+      400:   17:}
+        -:   18:
+function generateRandNum called 2400 returned 100% blocks executed 100%
+     2400:   19:int generateRandNum(unsigned int min, unsigned int max){
+        -:   20:      // random() is part of posix and not available on windows
+        -:   21:      unsigned int switchMinMax;
+     2400:   22:      if(max <= min){
+branch  0 taken 775 (fallthrough)
+branch  1 taken 1625
+      775:   23:            switchMinMax = max;
+      775:   24:            max = min;
+      775:   25:            min = switchMinMax;
+        -:   26:      }
+        -:   27:
+        -:   28:      unsigned int randomNumber;
+        -:   29:
+     2400:   30:      unsigned int range = 1 + max - min;
+     2400:   31:      unsigned int buckets = RAND_MAX / range;
+     2400:   32:      unsigned int limit = buckets * range;
+        -:   33:
+        -:   34:      do{
+     2760:   35:          randomNumber = random();
+call    0 returned 2760
+        -:   36:      //     randNum = rand();
+     2760:   37:}while(randomNumber >= limit);
+branch  0 taken 360
+branch  1 taken 2400 (fallthrough)
+        -:   38:
+     2400:   39:      randomNumber = min + (randomNumber / buckets);
+        -:   40:
+     2400:   41:      return (int) randomNumber;
+        -:   42:}
+        -:   43:
+        -:   44:// with a newly initialized game, we should have 5 treasure cards.
+        -:   45:// adventurer would normally give us 2 additional treasure cards and we would have 7 treasure cards and 7 total cards
+        -:   46:// an error will be anything except this result
+        -:   47:
+function adventurerRandomTestGenerator called 400 returned 100% blocks executed 71%
+      400:   48:int adventurerRandomTestGenerator(){
+        -:   49:
+        -:   50:      //Default cards, as defined in playDom
+        -:   51:      // The following three lines are from player.c to initialize the game
+      400:   52:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   53:      struct gameState state;
+        -:   54:      int temphand[MAX_HAND];// moved above the if statement
+        -:   55:      int i, result, cardDrawn;
+      400:   56:      int countBefore = 0;
+      400:   57:      int countAfter = 0;
+        -:   58:      int numPlayers, handSize, num3, num4, num5, num6;
+      400:   59:      unsigned int randNum1 = random();
+call    0 returned 400
+      400:   60:      unsigned int randNum2 = random();
+call    0 returned 400
+      400:   61:      unsigned int randNum3 = random();
+call    0 returned 400
+      400:   62:      unsigned int randNum4 = random();
+call    0 returned 400
+      400:   63:      unsigned int randNum5 = random();
+call    0 returned 400
+      400:   64:      unsigned int randNum6 = random();
+call    0 returned 400
+      400:   65:      unsigned int randNum7 = random();
+call    0 returned 400
+      400:   66:      unsigned int randNum8 = random();
+call    0 returned 400
+      400:   67:      unsigned int randNum9 = random();
+call    0 returned 400
+      400:   68:      unsigned int randNum10 = random();
+call    0 returned 400
+      400:   69:      unsigned int randNum11 = random();
+call    0 returned 400
+      400:   70:      unsigned int randNum12 = random();
+call    0 returned 400
+        -:   71:
+        -:   72:
+      800:   73:      while(randNum1 > INT_MAX || randNum2 > INT_MAX || randNum3 > INT_MAX || randNum4 > INT_MAX || randNum5 > INT_MAX){
+branch  0 taken 0
+branch  1 taken 400 (fallthrough)
+branch  2 taken 0
+branch  3 taken 400 (fallthrough)
+branch  4 taken 0
+branch  5 taken 400 (fallthrough)
+branch  6 taken 0
+branch  7 taken 400 (fallthrough)
+branch  8 taken 0
+branch  9 taken 400 (fallthrough)
+        -:   74:
+    #####:   75:            randNum1 = random();
+call    0 never executed
+    #####:   76:            randNum2 = random();
+call    0 never executed
+    #####:   77:            randNum3 = random();
+call    0 never executed
+    #####:   78:            randNum4 = random();
+call    0 never executed
+    #####:   79:            randNum5 = random();
+call    0 never executed
+    #####:   80:            randNum6 = random();
+call    0 never executed
+    #####:   81:            randNum7 = random();
+call    0 never executed
+    #####:   82:            randNum8 = random();
+call    0 never executed
+    #####:   83:            randNum9 = random();
+call    0 never executed
+    #####:   84:            randNum10 = random();
+call    0 never executed
+    #####:   85:            randNum11 = random();
+call    0 never executed
+    #####:   86:            randNum12 = random();
+call    0 never executed
+        -:   87:
+        -:   88:      }
+        -:   89:
+      400:   90:      numPlayers = generateRandNum(2, 4);
+call    0 returned 400
+      400:   91:      handSize = generateRandNum(1, 500);
+call    0 returned 400
+      400:   92:      num3 = generateRandNum(randNum5, randNum6);
+call    0 returned 400
+      400:   93:      num4 = generateRandNum(randNum7, randNum8);
+call    0 returned 400
+      400:   94:      num5 = generateRandNum(randNum9, randNum10);
+call    0 returned 400
+      400:   95:      num6 = generateRandNum(randNum11, randNum12);
+call    0 returned 400
+        -:   96:
+        -:   97:
+        -:   98:      /*
+        -:   99:      Adventurer uses these values.  They'll need to be randomized:
+        -:  100:      state->deckCount[currentPlayer]
+        -:  101:      state->hand[currentPlayer][state->handCount[currentPlayer]-1]
+        -:  102:      state->discard[currentPlayer][state->discardCount[currentPlayer]++]=temphand[z-1]
+        -:  103:      state->handCount[currentPlayer] = state->handCount[currentPlayer] - 1;
+        -:  104:      */
+      400:  105:      initializeGame(numPlayers, k, 1, &state);//int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed, struct gameState *state)
+call    0 returned 400
+        -:  106:      // state.deckCount[0] = num3;
+        -:  107:
+        -:  108:
+        -:  109:
+     2400:  110:      for (i = 0; i < state.handCount[0]; i++)
+branch  0 taken 2000
+branch  1 taken 400 (fallthrough)
+        -:  111:       {
+        -:  112:             if (state.hand[0][i] == copper || state.hand[0][i] == silver || state.hand[0][i] || gold)
+     2000:  113:                   countBefore++;
+        -:  114:       }
+        -:  115:
+      400:  116:      int x = num3;
+      400:  117:      result = cardEffect(adventurer, num4, num5, num6, &state, 0, &x);//int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus)
+call    0 returned 400
+        -:  118:
+      400:  119:      result = 0;
+        -:  120:
+      400:  121:      if(result != 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 400
+      400:  122:            return 0;
+        -:  123:
+        -:  124:
+     3600:  125:      for (i = 0; i < state.handCount[0]; i++)
+branch  0 taken 3200
+branch  1 taken 400 (fallthrough)
+        -:  126:      {
+        -:  127:            if (state.hand[0][i] == copper || state.hand[0][i] == silver || state.hand[0][i] || gold)
+     3200:  128:                  countAfter++;
+        -:  129:      }
+      400:  130:      if(countAfter != countBefore + 2 /*&& state.handCount[0] != 7*/)
+branch  0 taken 400 (fallthrough)
+branch  1 taken 0
+      400:  131:            return 0;
+        -:  132:      // return 1;
+        -:  133:
+    #####:  134:}
+        -:  135:
+function main called 4 returned 100% blocks executed 100%
+        4:  136:int main(){
+        4:  137:      srand(time(NULL));
+call    0 returned 4
+call    1 returned 4
+        -:  138:      int returnValue, i;
+        -:  139:
+        4:  140:      printf("Beginning 100 iterations allowing 100 iterations of random values as parameters and gameState changes to the\nAdventurer Refactored function and cardEffect...");
+call    0 returned 4
+      404:  141:      for(i = 0; i < 100; i++){
+branch  0 taken 400
+branch  1 taken 4 (fallthrough)
+      400:  142:            returnValue = adventurerRandomTestGenerator();
+call    0 returned 400
+      400:  143:            printTestResults(returnValue);
+call    0 returned 400
+        -:  144:      }
+        -:  145:
+        4:  146:      return 0;
+        -:  147:}

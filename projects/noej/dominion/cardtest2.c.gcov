@@ -1,0 +1,89 @@
+        -:    0:Source:cardtest2.c
+        -:    0:Graph:cardtest2.gcno
+        -:    0:Data:cardtest2.gcda
+        -:    0:Runs:2
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <math.h>
+        -:    6:#include <stdlib.h>
+        -:    7:
+function printTestResults called 2 returned 100% blocks executed 50%
+        2:    8:void printTestResults(int test){
+        2:    9:      if(test == 0)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   10:            printf("Test Failed.\n");
+call    0 returned 2
+    #####:   11:      else if(test == 1)
+branch  0 never executed
+branch  1 never executed
+    #####:   12:            printf("Test Passed.\n");
+call    0 never executed
+        -:   13:      else
+    #####:   14:            printf("Function returned unexpected value.\n");
+call    0 never executed
+        2:   15:}
+        -:   16:
+        -:   17:// with a newly initialized game, we should have 5 treasure cards.
+        -:   18:// adventurer would normally give us 2 additional treasure cards and we would have 7 treasure cards and 7 total cards
+        -:   19:// an error will be anything except this result
+function adventurerRefactoredTest called 2 returned 100% blocks executed 87%
+        2:   20:int adventurerRefactoredTest(){
+        -:   21:
+        -:   22:      //Default cards, as defined in playDom
+        -:   23:      // The following three lines are from player.c to initialize the game
+        2:   24:      int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   25:      struct gameState state;
+        -:   26:      int temphand[MAX_HAND];// moved above the if statement
+        -:   27:      int i, result, cardDrawn;
+        2:   28:      int count = 0;
+        2:   29:      initializeGame(3,k,1,&state);
+call    0 returned 2
+        -:   30:
+       12:   31:      for (i = 0; i < state.handCount[0]; i++)
+branch  0 taken 10
+branch  1 taken 2 (fallthrough)
+        -:   32:       {
+        -:   33:             if (state.hand[0][i] == copper || state.hand[0][i] == silver || state.hand[0][i] || gold)
+       10:   34:                   count++;
+        -:   35:       }
+        -:   36:
+        -:   37:      int x;
+        2:   38:      result = cardEffect(adventurer, 0, 0, 0, &state, 0, &x);
+call    0 returned 2
+        2:   39:      if(result != 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   40:            return 0;
+        -:   41:
+        2:   42:      count = 0;
+       18:   43:      for (i = 0; i < state.handCount[0]; i++)
+branch  0 taken 16
+branch  1 taken 2 (fallthrough)
+        -:   44:      {
+        -:   45:            if (state.hand[0][i] == copper || state.hand[0][i] == silver || state.hand[0][i] || gold)
+       16:   46:                  count++;
+        -:   47:      }
+        2:   48:      if(count != 7, state.handCount[0] != 7)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   49:            return 0;
+    #####:   50:      return 1;
+        -:   51:
+        -:   52:}
+        -:   53:
+function main called 2 returned 100% blocks executed 100%
+        2:   54:int main(){
+        -:   55:
+        2:   56:      printf("Testing the 'adventurerRefactored' function...\n");
+call    0 returned 2
+        2:   57:      int testResults = adventurerRefactoredTest();
+call    0 returned 2
+        2:   58:      printTestResults(testResults);
+call    0 returned 2
+        -:   59:
+        2:   60:      return 0;
+        -:   61:}
