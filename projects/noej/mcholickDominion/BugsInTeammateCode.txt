@@ -1,0 +1,38 @@
+BUG REPORT
+
+BUG 1: ADVENTURER
+******************************************************************************************************************
+Katheryn introduced a bug into the adventurer function that shuffled the deck when it wasn't empty.  The result was
+that the player had 9 cards in his/her hand instead of 7.  The code is provided below.
+
+This is the bug in Katheryn's Adventurer function
+if (state->deckCount[currentPlayer] < 2) { //if the deck is empty we need to shuffle discard and add to deck
+      shuffle(currentPlayer, state);
+}
+
+This is what the code should like .
+if (state->deckCount[currentPlayer] < 1) { //if the deck is empty we need to shuffle discard and add to deck
+      shuffle(currentPlayer, state);
+}
+
+Note that the '2' in Katheryn's code is the bug and should be a '1'.
+********************************************************************************************************************
+
+BUG 2: COUNCIL ROOM
+********************************************************************************************************************
+Katheryn introduced a bug into the council_room function that allowed only the current player to draw additional cards.
+This resulted in an incorrect number of cards held by the current player and the other players.  The code is provided below.
+
+if ( i == currentPlayer )
+{
+      drawCard(i, state);
+}
+
+This is what the code should look like.
+if ( i != currentPlayer )
+{
+      drawCard(i, state);
+}
+
+Note that the '==' in Katheryn's code is the bug and should be a '!='
+********************************************************************************************************************

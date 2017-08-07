@@ -49,6 +49,7 @@ int adventurerRefactoredTest(){
       int temphand[MAX_HAND];// moved above the if statement
       int i, result, cardDrawn;
       int count = 0;
+      int newCount = 0;
       initializeGame(3,k,1,&state);
 
       for (i = 0; i < state.handCount[0]; i++)
@@ -59,18 +60,22 @@ int adventurerRefactoredTest(){
 
       int x;
       result = cardEffect(adventurer, 0, 0, 0, &state, 0, NULL);
+      // printf("result: %d\n", result);
 
-      if(result != 0)
+      if(result != 0){
             return 0;
+      }
 
-      count = 0;
+
       for (i = 0; i < state.handCount[0]; i++)
       {
             if (state.hand[0][i] == copper || state.hand[0][i] == silver || state.hand[0][i] || gold)
-                  count++;
+                  newCount++;
       }
-      if(count != 7, state.handCount[0] != 7)
+      if(count +2 != newCount || state.handCount[0] != 7){
+            // printf("Hello?\t%d\n", state.handCount[0]);
             return 0;
+      }
       return 1;
 
 }
